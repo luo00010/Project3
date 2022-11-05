@@ -34,6 +34,7 @@ public class View {
                         is = false;
                     }
                     break;
+
             }
         }
     }
@@ -68,6 +69,7 @@ public class View {
                 service.deleTeam(teamService, teamUidIndex, y - 1);
                 p.setIsFalg("FREE");
                 y--;
+                System.out.println("删除成功");
             } catch (MyException e) {
                 System.out.println(e.getMessage());
             } finally {
